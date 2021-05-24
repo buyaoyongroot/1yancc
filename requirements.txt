@@ -1,0 +1,4 @@
+configparser
+pymysql
+flask
+requests

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+  <title>
+    一言 - 云笔记
+  </title>
+  <!-- seo -->
+  <META name="AUTHOR" content="kele"/>
+  <META name ="keywords" CONTENT="一言,云笔记,安全云笔记,600,liubai,liubai.org,一言官网,图文编辑软件,一言下载,图文创作,创作软件,原创社区,小说,散文,写作,阅读"/>
+  <META name="description" CONTENT="一言是一个优质安全的云笔记。在这里，安全是第一位的，这个世界需要一言。"/>
+  <meta name="applicable-device" content="pc"/>
+  <meta name="renderer" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+  <link rel="shortcut icon" href="./static/dist/img/logo.ico"/>
+  <link type="text/css" rel="stylesheet" href="./static/dist/css/init.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/dist/css/loading.css"/>
+  <!-- <link type="text/css" rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css" /> -->
+  <link type="text/css" rel="stylesheet" href="./static/lib/jquery-ui/v1.12.1/jquery-ui.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/lib/font-awesome/v4.7.0/css/font-awesome.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/lib/ztree/v3.5.34/css/metroStyle/metroStyle.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/lib/dataTables/1.10.15/js/jquery.dataTables.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/lib/codemirror-markdown/codemirror/lib/codemirror.css"/>
+  <!-- <link type="text/css" rel="stylesheet" href="./lib/codemirror-markdown/codemirror/theme/material.css"> -->
+  <link type="text/css" rel="stylesheet" href="./static/lib/codemirror-markdown/codemirror/addon/dialog/dialog.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/lib/codemirror-markdown/stylesheets/style.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/lib/codemirror-markdown/stylesheets/github-markdown.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/lib/codemirror-markdown/stylesheets/prism.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/dist/css/style.css"/>
+</head>
+<body>
+  <div id="center" class="loading ">
+    <div class="skype-loader">
+      <div class="dot">
+        <div class="first"></div>
+      </div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="sidebar">
+      <ul id="tree" class="ztree"></ul>
+    </div>
+    <div class="content">
+      <div class="editor-wrap">
+        <textarea name="editor" id="editor" cols="30" rows="10" style="display: none;"></textarea>
+      </div>
+      <div class="preview-wrap">
+        <div class="markdown-body"></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./static/lib/jquery/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="./static/lib/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
+  <!-- <script type="text/javascript" src="./lib/jquery/jquery-autoHeightTextarea.js"></script> -->
+  <script type="text/javascript" src="./static/lib/jquery/jquery-textarea++.js"></script>
+  <script type="text/javascript" src="./static/lib/ztree/v3.5.34/jquery.ztree.all.min.js"></script>
+  <script type="text/javascript" src="./static/lib/dataTables/1.10.15/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="./static/lib/layer/layer.js"></script>
+  <script type="text/javascript" src="./static/lib/encrypt/md5.js"></script>
+  <script type="text/javascript" src="./static/lib/encrypt/crypto-js/v3.1.2/rollups/tripledes.js"></script>
+  <script type="text/javascript" src="./static/lib/encrypt/crypto-js/v3.1.2/components/mode-ecb.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/javascripts/marked.min.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/lib/codemirror.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/addon/edit/continuelist.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/addon/edit/matchbrackets.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/addon/edit/closebrackets.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/mode/markdown/markdown.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/keymap/sublime.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/addon/search/search.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/addon/search/searchcursor.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/addon/dialog/dialog.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/addon/comment/comment.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/codemirror/addon/wrap/hardwrap.js"></script>
+  <script type="text/javascript" src="./static/lib/codemirror-markdown/javascripts/prism.js"></script>
+  <script type="text/javascript" src="./static/dist/js/func/init.js"></script>
+  <script type="text/javascript" src="./static/dist/js/func/mark.js"></script>
+  <script type="text/javascript" src="./static/dist/js/func/tree.js"></script>
+  <script type="text/javascript" src="./static/dist/js/style.js"></script>
+</body>
+</html>
