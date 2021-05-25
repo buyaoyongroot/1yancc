@@ -29,9 +29,12 @@ span {
     /*flex: 0 1 300px;*/
     /*float: left;*/
     display: none;
+    /*固定宽度*/
+    flex-shrink: 0;
     /*border: 1px solid #ccc;*/
     /*    border-right: 1px solid #ccc;*/
     overflow: auto;
+    /*flex:0 1 300px;*/
     /*overflow-x:auto;*/
     /*display: none;*/
     /*margin-right: -15px;*/
@@ -44,6 +47,7 @@ span {
     /*width: 84%;*/
     /*float: left;*/
     display: none;
+    /*flex:0 1 auto;*/
     /*border: 1px solid #ccc;*/
     /*    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3); */
 }
