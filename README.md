@@ -1,6 +1,10 @@
 ### 一言
 
->Python3实现的超级安全的云笔记。
+>Python3实现的优质安全的私有云笔记，在这里，安全是第一位的。
+
+
+
+
 
 #### 在线演示
 
@@ -10,11 +14,17 @@
 
 
 
+
+
 #### 安装
+
+默认使用sqlite数据库存储。
 
 > pip3 install -r requirements.txt
 >
 > python3 index.py
+
+
 
 
 
@@ -24,11 +34,15 @@
 
 
 
+
+
 #### PS
 
 ##### 快速后台启动
 
 > nohup python3 index.py &
+
+
 
 
 
