@@ -221,7 +221,7 @@ function layerlogin() {
         area: ['500px', '250px'], //宽高
         // shadeClose: true, //开启遮罩关闭
         //content: ['login.html','no'],
-        content: '<div class="login"><p style="text-align: center;margin-left: 70px;"><img src="./static/dist/img/logo.png" height="50" width="50"/></p><p><label for="login">Email:</label><input type="text" id="email" placeholder="name@example.com" autocomplete="off"></p><p><label for="password">Password:</label><input type="password" id="password" placeholder="over 5 bits without space"></p><p class="login-submit" style="margin-top: 60px;"><button type="submit" class="login-button">Login</button></p> <!--<p class="forgot-password"><a href="index.html">Forgot your password?</a></p> --></div>',
+        content: '<div class="login"><p style="text-align: center;margin-left: 70px;"><img src="./static/dist/img/logo.png" height="50" width="50"/></p><p><label for="login">Email:</label><input type="text" id="email" placeholder="name@example.com" autocomplete="off"></p><p><label for="password">Password:</label><input type="password" id="password" placeholder="over 5 bits without space"></p><p class="login-submit" style="margin-top: 60px;"><button type="submit" class="login-button">Login</button></p> <p class="github"><a href="https://github.com/buyaoyongroot/1yancc" target="_blank" style="float: right;">Github</a></p></div><style>a:hover,a:link,a:visited,a:active,a:focus{color: #9d9dab7d;text-decoration: none;}</style>',
         success: function(layero, index) {
             var index = index;
             $("#email").focus();
